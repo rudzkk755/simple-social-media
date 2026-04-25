@@ -46,3 +46,5 @@ jobs:
         run: docker compose down --rmi all
       - name: start container
         run: docker compose up -d
+      - name: Run Migrations
+        run: docker exec social-media-container php artisan migrate --force
