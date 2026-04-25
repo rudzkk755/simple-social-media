@@ -1,5 +1,6 @@
 services:
   web:
     image: ${DOCKER_USER}/baharudin3-simple-social-media
+    container_name: social-media-container
     ports:
       - "8000:8000"
